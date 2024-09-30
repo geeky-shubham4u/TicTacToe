@@ -47,6 +47,9 @@ function checkWinner() {
             popup.classList.add('popup');
             popup.innerHTML = `<h2>${currentPlayer} wins!</h2>`;
             document.body.appendChild(popup);
+              setTimeout(() => {
+            	popup.remove();
+              }, 2000);
         }
     });
 
